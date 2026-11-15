@@ -1,0 +1,30 @@
+{
+  "name": "fonts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/fonts/src",
+  "projectType": "library",
+  "tags": ["type:lib"],
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {},
+    "build-sfnt": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "node scripts/convert-fonts-to-sfnt.mjs"
+    },
+    "build-script-faces": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "node scripts/build-script-faces.mjs"
+    },
+    "build-fallback-faces": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "python3 scripts/build-fallback-fonts.py"
+    }
+  }
+}

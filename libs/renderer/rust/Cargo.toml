@@ -1,0 +1,76 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.85"
+license = "AGPL-3.0-only"
+publish = false
+
+[workspace.dependencies]
+poster-model = { path = "crates/poster-model" }
+poster-canvas = { path = "crates/poster-canvas" }
+poster-text = { path = "crates/poster-text", default-features = false }
+poster-render = { path = "crates/poster-render", default-features = false }
+poster-testkit = { path = "crates/poster-testkit" }
+
+console_error_panic_hook = "0.1"
+fontdue = "0.9"
+jpeg-encoder = "0.6"
+rustybuzz = "0.20"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tiny-skia = { version = "0.11", default-features = false, features = ["std", "no-std-float", "simd"] }
+unicode-bidi = "0.3.18"
+unicode-segmentation = "1.13.3"
+wasm-bindgen = "=0.2.100"
+wuff = { version = "0.2.9", default-features = false, features = ["brotli"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+unreachable_pub = "warn"
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+# Pixel code converts between integer channels, float coordinates and pixel
+# counts on every line; each conversion is bounded by the image it works on.
+cast_possible_truncation = "allow"
+cast_precision_loss = "allow"
+cast_sign_loss = "allow"
+cast_possible_wrap = "allow"
+module_name_repetitions = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+
+[profile.release]
+# The renderer is per-pixel work end to end; speed matters more than size.
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+# Shaping, bidi, segmentation and WOFF2 unpacking run per word or per font,
+# never per pixel, so they are built for size.
+[profile.release.package.rustybuzz]
+opt-level = "s"
+[profile.release.package.ttf-parser]
+opt-level = "s"
+[profile.release.package.unicode-bidi]
+opt-level = "s"
+[profile.release.package.unicode-segmentation]
+opt-level = "s"
+[profile.release.package.unicode-properties]
+opt-level = "s"
+[profile.release.package.unicode-script]
+opt-level = "s"
+[profile.release.package.unicode-ccc]
+opt-level = "s"
+[profile.release.package.unicode-bidi-mirroring]
+opt-level = "s"
+[profile.release.package.wuff]
+opt-level = "s"
+[profile.release.package.brotli-decompressor]
+opt-level = "s"

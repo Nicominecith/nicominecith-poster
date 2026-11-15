@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "FreetsyLibrary",
+  "title": "Workspace library",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Project name of the library, also its folder under libs/ and its @freetsy/<name> import path.",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+      "$default": { "$source": "argv", "index": 0 },
+      "x-prompt": "What is the name of the library?"
+    }
+  },
+  "required": ["name"]
+}

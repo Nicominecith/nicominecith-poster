@@ -1,0 +1,5 @@
+import { CatalogWorkshop, mountWorkshop } from "@freetsy/workshop";
+import "@freetsy/styles";
+import { <%= propertyName %>Workshop } from "./<%= fileName %>-workshop";
+
+mountWorkshop({ id: "<%= workshopId %>", Home: () => <CatalogWorkshop workshop={<%= propertyName %>Workshop} /> });

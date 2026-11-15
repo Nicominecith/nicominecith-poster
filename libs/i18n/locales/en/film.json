@@ -1,0 +1,70 @@
+{
+  "filmHome": {
+    "eyebrow": "Project · No · 002",
+    "titleTop": "Film",
+    "titleBottom": "Workshop"
+  },
+  "film": {
+    "contentHint": "Search for a film or series and every field is filled. Or just type it yourself.",
+    "search": "Film search",
+    "title": "Film title",
+    "subtitle": "Director",
+    "subtitleHint": "Sits under the title, like the artist on an album poster.",
+    "subtitlePlaceholder": "e.g. Christopher Nolan",
+    "showSubtitle": "Show the director under the title",
+    "releaseDate": "Release date",
+    "showReleaseDate": "Show release date",
+    "releaseDateLabelHint": "What the release date is called on the poster. Leave empty for Premiere.",
+    "showLength": "Show runtime",
+    "lengthLabelHint": "What the runtime is called on the poster. Leave empty for Runtime.",
+    "length": "Runtime (minutes)",
+    "lengthHint": "Optional. Whole minutes; the poster prints e.g. “148 min”.",
+    "lengthInvalid": "Enter the runtime in whole minutes, for example 148.",
+    "quoteFormat": "Favorite quote",
+    "quoteLabel": "Quote",
+    "quoteHint": "The line from the film that stuck with you. It looks best on the poster in quotation marks. Film quotes are usually protected by copyright, so without permission they are for a private poster only.",
+    "summaryLabel": "Summary (one line = one paragraph)",
+    "summaryHint": "A film search puts the plot from Wikipedia here, shortened to a few sentences. Long paragraphs wrap on the poster by themselves. Wikipedia text is licensed under CC BY-SA 4.0; for a published or sold poster, the terms of use apply.",
+    "previewEmptyHint": "Set a title and the cast, and the preview shows up here.",
+    "qrHint": "Where the poster's QR code points. The film's Wikipedia article by default; clear it to remove the QR code.",
+    "qrReset": "Reset to the film link"
+  },
+  "filmSearch": {
+    "placeholder": "Search for a film or series …",
+    "title": "Search films",
+    "description": "Films and series from Wikidata. Director, cast and runtime come from there, the summary from Wikipedia.",
+    "note": "The search uses Wikidata and Wikipedia and only takes text from them: title, director, cast and plot. It never loads images. More in the <privacy>privacy policy</privacy>.",
+    "kindFilm": "Film",
+    "kindSeries": "Series",
+    "loading": "Loading film …",
+    "loadFailed": "Could not load the film.",
+    "castCount_one": "{{count}} cast member",
+    "castCount_other": "{{count}} cast members",
+    "chooseOther": "Choose another film",
+    "sources_wikipedia": "Title, dates, cast, crew and awards: <wikidata>Wikidata</wikidata> (CC0). Plot: <wikipedia>Wikipedia, “{{title}}”</wikipedia>, <license>CC BY-SA 4.0</license>.",
+    "sources_none": "Title, dates, cast, crew and awards: <wikidata>Wikidata</wikidata> (CC0). No plot was found.",
+    "resetContent": "Reset to the film's values",
+    "replaceHint": "Both options refill title, director, date, runtime, info, cast, awards and summary. Whatever you changed there yourself is gone afterwards."
+  },
+  "filmCredits": {
+    "director": "Director",
+    "writer": "Screenplay",
+    "composer": "Music",
+    "cinematographer": "Cinematography",
+    "editor": "Editing",
+    "producer": "Producers",
+    "studio": "Studio",
+    "genre": "Genre",
+    "country": "Country",
+    "language": "Language",
+    "rating": "Rating",
+    "basedOn": "Based on",
+    "filmingLocation": "Filming locations"
+  },
+  "filmDefaults": {
+    "title": "My film",
+    "subtitle": "Director",
+    "quote": "“This is the line you never forget.”",
+    "summary": "This is where your film's story goes.\nA second paragraph, if the story needs more."
+  }
+}

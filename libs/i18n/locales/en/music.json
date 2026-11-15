@@ -1,0 +1,60 @@
+{
+  "home": {
+    "eyebrow": "Project · No · 001",
+    "titleTop": "Music",
+    "titleBottom": "Workshop"
+  },
+  "search": {
+    "placeholder": "Search album or artist …",
+    "searching": "Searching …",
+    "failed": "Search is not working right now.",
+    "empty": "Nothing found.",
+    "title": "Search album",
+    "description": "iTunes and MusicBrainz together. The same album can come from both sources, each with its own tracklist.",
+    "hint": "Type at least two characters.",
+    "kind": {
+      "album": "Album",
+      "single": "Single",
+      "ep": "EP"
+    },
+    "releaseCount_one": "{{count}} pressing",
+    "releaseCount_other": "{{count}} pressings",
+    "note": "The search uses iTunes and MusicBrainz and takes only text from there, meaning title, artist and tracklist. It does not load any images. More on that in the <privacy>privacy notice</privacy>.",
+    "loading": "Loading tracklist …",
+    "loadFailed": "The album could not be loaded.",
+    "trackCount_one": "{{count}} track",
+    "trackCount_other": "{{count}} tracks",
+    "chooseOther": "Pick another album",
+    "resetContent": "Reset to album values",
+    "replaceHint": "Each of these refills the headline, subtitle, date and tracklist. Anything you changed there yourself is gone afterwards.",
+    "editionTitle": "Which edition?",
+    "editionDescription": "This album comes in several versions with tracklists of different lengths.",
+    "editionChange": "Change edition",
+    "editionUse": "Use this edition",
+    "editionInUse": "Keep this edition",
+    "editionUnknownDate": "Year unknown",
+    "editionLoading": "Looking for editions …"
+  },
+  "contentDefaults": {
+    "title": "My album",
+    "subtitle": "Your artist name",
+    "tracks": [
+      {
+        "title": "Intro",
+        "duration": "0:42"
+      },
+      {
+        "title": "First song",
+        "duration": "3:18"
+      },
+      {
+        "title": "Second song",
+        "duration": "4:05"
+      },
+      {
+        "title": "Outro",
+        "duration": "1:57"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "bookHome": {
+    "eyebrow": "Project · No · 003",
+    "titleTop": "Book",
+    "titleBottom": "Workshop"
+  },
+  "book": {
+    "contentHint": "Search for a book and every field is filled. Or just type it yourself.",
+    "search": "Book search",
+    "title": "Book title",
+    "subtitle": "Author",
+    "subtitleHint": "Sits under the title, like the artist on an album poster.",
+    "subtitlePlaceholder": "e.g. J. R. R. Tolkien",
+    "showSubtitle": "Show the author under the title",
+    "releaseDate": "Publication date",
+    "showReleaseDate": "Show publication date",
+    "releaseDateLabelHint": "What the publication date is called on the poster. Leave empty for Published.",
+    "showLength": "Show page count",
+    "lengthLabelHint": "What the page count is called on the poster. Leave empty for Length.",
+    "length": "Pages",
+    "lengthHint": "Optional. The poster prints e.g. “320 pages”.",
+    "lengthInvalid": "Enter the page count as a whole number, for example 320.",
+    "quoteFormat": "First line",
+    "quoteLabel": "First line or favorite quote",
+    "quoteHint": "A book search puts the book's first line here when it is known. You can also write your favorite quote. Lines from books are usually protected by copyright, so without permission they are for a private poster only.",
+    "summaryLabel": "Summary (one line = one paragraph)",
+    "summaryHint": "A book search puts the plot from Wikipedia or Open Library's description here, shortened to a few sentences. Wikipedia text is licensed under CC BY-SA 4.0, descriptions may be publishers' blurbs. For a published or sold poster, the terms of use apply.",
+    "seriesValue": "{{name}} · Book {{position}}",
+    "quoteValue": "“{{text}}”",
+    "previewEmptyHint": "Set a title and the chapters, and the preview shows up here.",
+    "qrHint": "Where the poster's QR code points. The book's Wikipedia article or Open Library page by default; clear it to remove the QR code.",
+    "qrReset": "Reset to the book link"
+  },
+  "bookSearch": {
+    "placeholder": "Search for a book or author …",
+    "title": "Search books",
+    "description": "Books from Open Library, completed with Wikidata and Wikipedia. Chapters come from editions that recorded their table of contents.",
+    "note": "The search uses Open Library, Wikidata and Wikipedia and only takes text from them: title, author, chapters, characters and plot. It never loads images. More in the <privacy>privacy policy</privacy>.",
+    "editionCount_one": "{{count}} edition",
+    "editionCount_other": "{{count}} editions",
+    "loading": "Loading book …",
+    "loadFailed": "Could not load the book.",
+    "chapterCount_one": "{{count}} chapter",
+    "chapterCount_other": "{{count}} chapters",
+    "chooseOther": "Choose another book",
+    "sources_wikipedia": "Work, editions, chapters and publisher: <openlibrary>Open Library</openlibrary>. Title, characters, genre, series and first line where known: <wikidata>Wikidata</wikidata> (CC0). Plot: <wikipedia>Wikipedia, “{{title}}”</wikipedia>, <license>CC BY-SA 4.0</license>.",
+    "sources_openlibrary": "Work, editions, chapters and publisher: <openlibrary>Open Library</openlibrary>. Title, characters, genre, series and first line where known: <wikidata>Wikidata</wikidata> (CC0). Summary: <description>Open Library</description>'s description, often a publisher's blurb.",
+    "sources_none": "Work, editions, chapters and publisher: <openlibrary>Open Library</openlibrary>. Title, characters, genre, series and first line where known: <wikidata>Wikidata</wikidata> (CC0). No summary was found.",
+    "resetContent": "Reset to the book's values",
+    "replaceHint": "Both options refill title, author, date, pages, info, chapters, characters, works, first line and summary. Whatever you changed there yourself is gone afterwards."
+  },
+  "bookCredits": {
+    "author": "Author",
+    "series": "Series",
+    "genre": "Genre",
+    "form": "Form",
+    "publisher": "Publisher",
+    "places": "Setting",
+    "era": "Era",
+    "language": "Original language"
+  },
+  "bookDefaults": {
+    "title": "My book",
+    "subtitle": "Author",
+    "quote": "“This is the first line of your favorite book.”",
+    "summary": "This is where your book's story goes.\nA second paragraph, if the story needs more."
+  }
+}

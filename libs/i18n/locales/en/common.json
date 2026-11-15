@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Nicominecith Poster",
+    "description": "Turn any album or film into a print-ready poster with tracklist or cast, colors and a QR code."
+  },
+  "language": {
+    "label": "Language",
+    "ariaLabel": "Choose language"
+  },
+  "nav": {
+    "brand": "Nicominecith Poster",
+    "back": "Back to the workshop",
+    "workshops": "Workshops",
+    "music": "Music workshop",
+    "film": "Film workshop",
+    "book": "Book workshop",
+    "terms": "Terms of use",
+    "privacy": "Privacy",
+    "imprint": "Legal notice"
+  },
+  "validation": {
+    "releaseDate": "Enter a valid date, for example 2007, 2007-10 or 2007-10-10.",
+    "duration": "Enter the duration as minutes:seconds or hours:minutes:seconds.",
+    "size": "Enter a size between {{min}} and {{max}} mm.",
+    "posterInput": "Correct the marked fields before downloading.",
+    "cancelAlbum": "Cancel album import",
+    "cancelFilm": "Cancel film import",
+    "cancelBook": "Cancel book import"
+  },
+  "errors": {
+    "imageType": "Please pick an image file (JPG, PNG, WebP …).",
+    "imageTooLarge": "That image is too large (max. 20 MB).",
+    "imageLoad": "The image could not be loaded.",
+    "imageDecode": "The image could not be decoded.",
+    "canvasUnsupported": "This browser does not support Canvas 2D.",
+    "cropFailed": "Cropping failed.",
+    "coverRead": "The cover could not be read.",
+    "posterRender": "The poster could not be rendered.",
+    "browserTooOld": "This browser is too old to draw the poster. Please update it (Safari 16.4, Chrome 91, Firefox 89 or newer).",
+    "qrCreate": "The QR code could not be created.",
+    "spotifyCodeUnreachable": "Spotify cannot be reached right now.",
+    "spotifyCodeUnreadable": "The Spotify code could not be read.",
+    "spotifyCodeCreate": "The Spotify code could not be created.",
+    "fontLoad": "The font could not be loaded.",
+    "pdfCreate": "The PDF could not be created.",
+    "pdfEmbed": "The image could not be embedded into the PDF.",
+    "pdfSave": "The PDF could not be saved.",
+    "itunesUnreachable": "iTunes cannot be reached right now.",
+    "musicbrainzUnreachable": "MusicBrainz cannot be reached right now.",
+    "albumNotFound": "Album {{id}} not found.",
+    "albumNotFoundPickAgain": "Album {{id}} not found. Please pick it again through the search.",
+    "noTracklist": "There is no tracklist for this album.",
+    "wikidataUnreachable": "Wikidata can't be reached right now.",
+    "wikipediaUnreachable": "Wikipedia can't be reached right now.",
+    "filmNotFound": "Film {{id}} not found. Please pick it again from the search.",
+    "openLibraryUnreachable": "Open Library can't be reached right now.",
+    "bookNotFound": "Book {{id}} not found. Please pick it again from the search."
+  },
+  "prefs": {
+    "open": "Open settings",
+    "title": "Settings",
+    "description": "Language, appearance and covers. Everything stays on your device only.",
+    "theme": "Appearance",
+    "theme_system": "Automatic",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "autoCover": "Load cover automatically",
+    "autoCoverHint": "Fetches the matching cover itself (Spotify link, iTunes, Wikipedia, Open Library). You can still pick your own image at any time.",
+    "credit": "Nicominecith Poster by Nicominecith_clips. Based on Freetsy (AGPL-3.0)."
+  }
+}

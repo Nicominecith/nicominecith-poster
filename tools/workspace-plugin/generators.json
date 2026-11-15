@@ -1,0 +1,14 @@
+{
+  "generators": {
+    "workshop": {
+      "factory": "./src/generators/workshop/generator.ts",
+      "schema": "./src/generators/workshop/schema.json",
+      "description": "Scaffold a catalog workshop app and register it with the dev server, the site build and Firebase hosting."
+    },
+    "library": {
+      "factory": "./src/generators/library/generator.ts",
+      "schema": "./src/generators/library/schema.json",
+      "description": "Scaffold a library under libs/ with its public entry point and @freetsy path alias."
+    }
+  }
+}

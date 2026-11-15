@@ -1,0 +1,446 @@
+{
+  "upload": {
+    "title": "Cover hochladen",
+    "hint": "Klicken oder Bild hierher ziehen",
+    "previewAlt": "Cover-Vorschau",
+    "replace": "Anderes Bild",
+    "remove": "Entfernen",
+    "processing": "Bild wird verarbeitet …"
+  },
+  "cropper": {
+    "title": "Cover zuschneiden",
+    "hint": "Ziehen zum Verschieben, Regler zum Zoomen.",
+    "zoom": "Zoom",
+    "cancel": "Abbrechen",
+    "confirm": "Übernehmen",
+    "processing": "Wird verarbeitet …"
+  },
+  "preview": {
+    "eyebrow": "Vorschau",
+    "fallbackFormat": "Poster",
+    "pixelSize": "{{width}} × {{height}} px",
+    "paperSize": "{{width}} × {{height}} mm · {{dpi}} DPI",
+    "emptyTitle": "Noch kein Poster",
+    "emptyHint": "Titel und Trackliste festlegen, dann erscheint die Vorschau hier.",
+    "alt": "Poster-Vorschau: {{title}}",
+    "loading": "Vorschau wird gezeichnet …",
+    "zoom": "Zoom",
+    "zoomValue": "{{percent}} %"
+  },
+  "poster": {
+    "released": "Erschienen",
+    "length": "Länge",
+    "albumLength": "Album-Länge",
+    "recordLabel": "Plattenfirma",
+    "lengthValue": "{{minutes}} Min.",
+    "textSource": "Text",
+    "premiere": "Premiere",
+    "runtime": "Laufzeit",
+    "published": "Erschienen",
+    "pages": "Umfang",
+    "pagesValue_one": "{{count}} Seite",
+    "pagesValue_other": "{{count}} Seiten"
+  },
+  "settings": {
+    "eyebrow": "Einstellungen",
+    "newPoster": "Neues Poster",
+    "style": "Stil",
+    "format": "Format",
+    "widthMm": "Breite (mm)",
+    "heightMm": "Höhe (mm)",
+    "cover": "Cover",
+    "coverShape": "Bildformat",
+    "coverShapeHint": "Albumcover sind quadratisch, Filmplakate hochkant. Beim Wechsel schneidest du dasselbe Bild einfach neu zu.",
+    "coverShape_square": "Quadrat · 1:1",
+    "coverShape_portrait": "Hochformat · 2:3",
+    "image": "Bild",
+    "content": "Inhalt",
+    "groupTitle": "Titel",
+    "groupBody": "Unter dem Titel",
+    "artistSearch": "Interpretensuche",
+    "contentHint": "Such ein Album, dann sind alle Felder gefüllt. Oder tipp einfach selbst.",
+    "contentTitle": "Albumtitel",
+    "contentTitlePlaceholder": "Titel des Posters",
+    "contentSubtitle": "Künstlername",
+    "contentSubtitlePlaceholder": "z. B. Interpret",
+    "contentReleaseDate": "Erscheinungsdatum",
+    "contentReleaseDatePlaceholder": "10.10.2007",
+    "contentReleaseDateHint": "Optional. Nur das Jahr, Monat und Jahr oder das volle Datum, also 2007, 10.2007 oder 10.10.2007. Das Poster druckt so genau, wie du es angibst.",
+    "showReleaseDate": "Erscheinungsdatum anzeigen",
+    "showSubtitle": "Künstlername unter dem Titel anzeigen",
+    "releaseDateLabel": "Überschrift für das Erscheinungsdatum",
+    "releaseDateLabelHint": "So heißt das Erscheinungsdatum auf dem Poster. Leer lassen für Erschienen.",
+    "showAlbumLength": "Album-Länge anzeigen",
+    "lengthLabel": "Überschrift für die Länge",
+    "lengthLabelHint": "So heißt die Länge auf dem Poster. Leer lassen für Album-Länge.",
+    "contentFormat": "Inhaltsformat",
+    "contentFormatList": "Liste",
+    "contentFormatFreeform": "Freitext",
+    "tracklistLabel": "Trackliste",
+    "tracklistHint": "Die Länge ist optional. Am Griff lässt sich eine Zeile verschieben.",
+    "trackTitlePlaceholder": "Titel",
+    "trackDurationPlaceholder": "3:45",
+    "trackTitleAria": "Titel von Track {{number}}",
+    "trackEmphasize": "Track {{number}} fett machen",
+    "trackDurationAria": "Länge von Track {{number}}",
+    "trackAdd": "Track hinzufügen",
+    "trackReorder": "Track {{number}} verschieben",
+    "trackRemove": "Track {{number}} entfernen",
+    "freeformLabel": "Text (eine Zeile = eine Poster-Zeile)",
+    "freeformPlaceholder": "Schreib hier, was du willst …",
+    "textScale": "Textgröße · {{percent}}%",
+    "tweaks": "Anpassung",
+    "codeGroup": "QR-Code",
+    "export": "Export",
+    "padding": "Innenabstand · {{percent}}%",
+    "titleAlign": "Ausrichtung",
+    "titleAlignHint": "Gilt für Titel, Interpret und Farbpalette.",
+    "titleAlign_left": "Links",
+    "titleAlign_center": "Mittig",
+    "titleAlign_right": "Rechts",
+    "showPalette": "Farbpalette anzeigen",
+    "codeKind": "Code auf dem Poster",
+    "codeKindQr": "QR-Code",
+    "codeKindSpotify": "Spotify-Code",
+    "spotifyLabel": "Spotify-Link",
+    "spotifyHint": "Ziel des Spotify-Codes auf dem Poster. Album, Song, Interpret, Playlist oder Podcast, kopiert aus Spotify. Ohne gültigen Link bleibt kein Code auf dem Poster.",
+    "spotifyNote": "Zum Erzeugen des Codes fragt dein Browser Spotify direkt an. Dabei gehen der Link und deine IP-Adresse an Spotify. Näheres im <privacy>Datenschutz</privacy>.",
+    "spotifyClear": "Leeren, kein Code auf dem Poster",
+    "spotifyInvalid": "Das ist kein Spotify-Link. Erwartet wird open.spotify.com/album/… oder spotify:album:…",
+    "qrLabel": "QR-Code-Link",
+    "qrClear": "Leeren, kein QR-Code auf dem Poster",
+    "qrReset": "Auf Album-Link zurücksetzen",
+    "qrHint": "Ziel des QR-Codes auf dem Poster. Standardmäßig der Album-Link, leeren entfernt den QR-Code.",
+    "qrHintNoSource": "Ziel des QR-Codes auf dem Poster. Ohne Link bleibt kein QR-Code auf dem Poster.",
+    "fileFormat": "Dateiformat",
+    "resolution": "Auflösung",
+    "resolutionFixed": "Dieses Format hat eine feste Pixelgröße. Die DPI-Wahl greift nur bei Papierformaten.",
+    "rightsNotice": "Nutze nur eigene Bilder oder Privatkopien. Mit dem Download bestätigst du, dass dir die Rechte am hochgeladenen Cover gehören oder du das Poster ausschließlich privat für dich selbst nutzt. Ohne diese Rechte sind Verkauf und Weitergabe nicht erlaubt. Details in den <terms>Nutzungsbedingungen</terms>.",
+    "exportCreate": "{{format}} erstellen",
+    "exportProgress": "{{format}} wird erstellt … {{progress}} %",
+    "exportLarge": "Dieser Export enthält sehr viele Pixel und kann etwas länger dauern.",
+    "exportSoftware": "Dein Browser verwendet den kompatiblen Software-Renderer. Dieser Export kann sehr lange dauern.",
+    "exportReady": "Bereit: {{name}}",
+    "exportSave": "{{format}} speichern",
+    "exportCancel": "Abbrechen",
+    "exportSaveFailed": "Speichern fehlgeschlagen. Du kannst es erneut versuchen.",
+    "exportFailed": "{{format}} konnte nicht erstellt werden. Bitte versuche es erneut.",
+    "exportFailedReason": "{{format}} konnte nicht erstellt werden: {{reason}}"
+  },
+  "advanced": {
+    "enable": "Selber basteln",
+    "description": "Der Stil gibt dann nichts mehr vor, du bestimmst Größen, Schriften und Farben.",
+    "risk": "Hier geht alles. Wenn dabei was vom Poster rutscht, kannst du trotzdem runterladen.",
+    "reset": "Auf den Stil zurücksetzen",
+    "sizes": "Größen",
+    "typography": "Schrift",
+    "spacing": "Abstände",
+    "colors": "Farben",
+    "surfaceColors": "Hintergrund und Code",
+    "textColors": "Textfarben",
+    "palette": "Farbpalette",
+    "paletteColors": "Farben der Felder",
+    "paletteCount": "Wie viele Farben",
+    "paletteShape": "Form der Felder",
+    "paletteShapeBar": "Ein Balken",
+    "paletteShapeBlock": "Blöcke",
+    "paletteShapeRound": "Abgerundet",
+    "paletteShapeCircle": "Kreise",
+    "paletteBarStretch": "Balken füllt die ganze Breite",
+    "paletteSwatchSize": "Feldgröße",
+    "paletteSwatchLink": "Breite und Höhe gleich halten",
+    "paletteSwatchWidth": "Feldbreite",
+    "paletteSwatchHeight": "Feldhöhe",
+    "paletteSwatchGap": "Zwischen den Feldern",
+    "paletteNumbers": "Nummern",
+    "paletteNumbersShow": "Felder nummerieren",
+    "paletteNumberSize": "Nummerngröße",
+    "paletteNumberFont": "Nummernschrift",
+    "paletteNumberColor": "Nummernfarbe",
+    "backgroundColor": "Hintergrund",
+    "backdropBlur": "Hintergrund unscharf",
+    "codeColor": "QR- oder Spotify-Code",
+    "titleColor": "Titel",
+    "subtitleColor": "Untertitel",
+    "bodyColor": "Text",
+    "durationColor": "Track-Längen",
+    "metadataLabelColor": "Info-Überschriften",
+    "metadataValueColor": "Info-Text",
+    "coverSize": "Cover",
+    "codeSize": "Code",
+    "sideColumnWidth": "Infospalte",
+    "columns": "Textspalten",
+    "titleSize": "Titelgröße",
+    "subtitleSize": "Untertitelgröße",
+    "bodySize": "Textgröße",
+    "metadataSize": "Infogröße",
+    "titleFont": "Titelschrift",
+    "subtitleFont": "Untertitelschrift",
+    "bodyFont": "Textschrift",
+    "metadataFont": "Infoschrift",
+    "innerPad": "Rand innen",
+    "coverGap": "Unter dem Cover",
+    "titleGap": "Titel zu Untertitel",
+    "paletteGap": "Über der Palette",
+    "contentGap": "Über der Trackliste",
+    "columnGap": "Zwischen Spalten",
+    "rowGap": "Zwischen Zeilen",
+    "sideGap": "Zwischen Infos",
+    "paletteSwatch": "Palettenfarbe {{index}}"
+  },
+  "pipette": {
+    "pick": "{{label}} vom Poster übernehmen",
+    "hint": "Klick ins Poster, um die Farbe von dort zu übernehmen. Esc bricht ab.",
+    "cancel": "Abbrechen"
+  },
+  "lists": {
+    "reorder": "{{item}} verschieben",
+    "remove": "{{item}} entfernen",
+    "emphasize": "{{item}} fett machen",
+    "nameAria": "{{item}}: Name",
+    "detailAria": "{{item}}: zweite Spalte",
+    "cast": {
+      "label": "Besetzung",
+      "hint": "Die Rolle ist optional und steht rechts neben dem Namen. Am Griff lässt sich eine Zeile verschieben.",
+      "item": "Darsteller {{number}}",
+      "namePlaceholder": "Name",
+      "detailPlaceholder": "Rolle",
+      "showDetails": "Rollen neben den Namen anzeigen",
+      "add": "Darsteller hinzufügen",
+      "samples": [
+        {
+          "name": "Hauptdarstellerin",
+          "detail": "Heldin"
+        },
+        {
+          "name": "Hauptdarsteller",
+          "detail": "Gegenspieler"
+        },
+        {
+          "name": "Nebendarstellerin",
+          "detail": "Beste Freundin"
+        },
+        {
+          "name": "Nebendarsteller",
+          "detail": "Mentor"
+        }
+      ]
+    },
+    "awards": {
+      "label": "Auszeichnungen",
+      "hint": "Preise, die der Film gewonnen hat, rechts das Jahr. Die Filmsuche trägt die bekanntesten ein.",
+      "item": "Auszeichnung {{number}}",
+      "namePlaceholder": "Preis",
+      "detailPlaceholder": "Jahr",
+      "showDetails": "Jahre anzeigen",
+      "add": "Auszeichnung hinzufügen",
+      "samples": [
+        {
+          "name": "Bester Film",
+          "detail": "2025"
+        },
+        {
+          "name": "Beste Regie",
+          "detail": "2025"
+        },
+        {
+          "name": "Beste Filmmusik",
+          "detail": "2025"
+        }
+      ]
+    },
+    "chapters": {
+      "label": "Kapitel",
+      "hint": "Das Inhaltsverzeichnis, nummeriert wie eine Trackliste. Rechts optional die Seite, auf der das Kapitel beginnt.",
+      "item": "Kapitel {{number}}",
+      "namePlaceholder": "Kapitelname",
+      "detailPlaceholder": "Seite",
+      "showDetails": "Seitenzahlen anzeigen",
+      "add": "Kapitel hinzufügen",
+      "samples": [
+        {
+          "name": "Der Anfang",
+          "detail": "7"
+        },
+        {
+          "name": "Die Reise",
+          "detail": "42"
+        },
+        {
+          "name": "Die Wende",
+          "detail": "118"
+        },
+        {
+          "name": "Das Ende",
+          "detail": "203"
+        }
+      ]
+    },
+    "characters": {
+      "label": "Figuren",
+      "hint": "Wer im Buch vorkommt, die bekanntesten zuerst. Rechts optional, wer sie sind.",
+      "item": "Figur {{number}}",
+      "namePlaceholder": "Name",
+      "detailPlaceholder": "Wer ist das?",
+      "showDetails": "Beschreibungen anzeigen",
+      "add": "Figur hinzufügen",
+      "samples": [
+        {
+          "name": "Heldin",
+          "detail": ""
+        },
+        {
+          "name": "Bester Freund",
+          "detail": ""
+        },
+        {
+          "name": "Gegenspieler",
+          "detail": ""
+        }
+      ]
+    },
+    "works": {
+      "label": "Weitere Werke",
+      "hint": "Andere Bücher derselben Autorin oder desselben Autors, rechts das Erscheinungsjahr.",
+      "item": "Werk {{number}}",
+      "namePlaceholder": "Titel",
+      "detailPlaceholder": "Jahr",
+      "showDetails": "Jahre anzeigen",
+      "add": "Werk hinzufügen",
+      "samples": [
+        {
+          "name": "Das erste Buch",
+          "detail": "2010"
+        },
+        {
+          "name": "Das zweite Buch",
+          "detail": "2014"
+        },
+        {
+          "name": "Das neueste Buch",
+          "detail": "2024"
+        }
+      ]
+    }
+  },
+  "listing": {
+    "format": "Darstellung",
+    "format_tracklist": "Trackliste",
+    "format_freeform": "Zusammenfassung",
+    "format_quote": "Zitat",
+    "format_cast": "Besetzung",
+    "format_awards": "Auszeichnungen",
+    "format_chapters": "Kapitel",
+    "format_characters": "Figuren",
+    "format_works": "Weitere Werke",
+    "formatHint_tracklist": "Die Titel eines Albums.",
+    "formatHint_freeform": "Worum es geht, in ein paar Sätzen.",
+    "formatHint_quote": "Ein einzelner Satz, groß gesetzt.",
+    "formatHint_cast": "Die Darsteller, rechts ihre Rollen.",
+    "formatHint_awards": "Die Preise, die der Film gewonnen hat.",
+    "formatHint_chapters": "Das Inhaltsverzeichnis, nummeriert wie eine Trackliste.",
+    "formatHint_characters": "Wer im Buch vorkommt.",
+    "formatHint_works": "Was die Autorin oder der Autor sonst geschrieben hat."
+  },
+  "source": {
+    "show": "Quelle des Textes auf dem Poster nennen",
+    "label": "Quellenangabe",
+    "hint": "Kommt die Zusammenfassung aus der Wikipedia, steht sie unter CC BY-SA 4.0. Veröffentlichst, verschenkst oder verkaufst du das Poster, muss diese Angabe drauf. Für ein Poster nur für dich ist sie freiwillig. Schreibst du den Text selbst, lass das Feld leer.",
+    "placeholder": "z. B. Wikipedia, „Der Hobbit“, gekürzt · CC BY-SA 4.0",
+    "wikipedia": "Wikipedia, „{{title}}“",
+    "openLibrary": "Open Library, Beschreibung",
+    "shortened": "gekürzt"
+  },
+  "infos": {
+    "label": "Weitere Infos",
+    "hint_music": "Jede Zeile kommt in die Infospalte des Posters, etwa Label, Produzent oder Studio. Was du nicht brauchst, löschst du einfach.",
+    "hint_film": "Die Filmsuche schlägt Drehbuch, Musik, Kamera, Genre, FSK, Vorlage, Drehorte und mehr vor. Tipp auf einen Vorschlag, um ihn aufs Poster zu holen. Gelöschte Zeilen tauchen wieder unter den Vorschlägen auf.",
+    "hint_book": "Die Buchsuche schlägt Reihe, Genre, Form, Verlag, Schauplatz, Epoche und Originalsprache vor. Tipp auf einen Vorschlag, um ihn aufs Poster zu holen. Gelöschte Zeilen tauchen wieder unter den Vorschlägen auf.",
+    "suggestions": "Persönliche Zeilen",
+    "fromSource": "Aus der Suche",
+    "suggestions_music": [
+      {
+        "label": "Lieblingssong",
+        "value": ""
+      },
+      {
+        "label": "Zum ersten Mal gehört",
+        "value": ""
+      },
+      {
+        "label": "Meine Bewertung",
+        "value": "★★★★★"
+      }
+    ],
+    "suggestions_film": [
+      {
+        "label": "Gesehen am",
+        "value": ""
+      },
+      {
+        "label": "Gesehen mit",
+        "value": ""
+      },
+      {
+        "label": "Kino",
+        "value": ""
+      },
+      {
+        "label": "Meine Bewertung",
+        "value": "★★★★★"
+      }
+    ],
+    "suggestions_book": [
+      {
+        "label": "Gelesen",
+        "value": ""
+      },
+      {
+        "label": "Lieblingsfigur",
+        "value": ""
+      },
+      {
+        "label": "Meine Ausgabe",
+        "value": ""
+      },
+      {
+        "label": "Meine Bewertung",
+        "value": "★★★★★"
+      }
+    ],
+    "labelPlaceholder": "Überschrift",
+    "valuePlaceholder": "Text",
+    "labelAria": "Überschrift von Info {{number}}",
+    "valueAria": "Text von Info {{number}}",
+    "add": "Info hinzufügen",
+    "reorder": "Info {{number}} verschieben",
+    "remove": "Info {{number}} entfernen"
+  },
+  "formats": {
+    "social": "Social Media · 1080 × 1920 px",
+    "a5": "A5 · 148 × 210 mm",
+    "a4": "A4 · 210 × 297 mm",
+    "a3": "A3 · 297 × 420 mm",
+    "a2": "A2 · 420 × 594 mm",
+    "a1": "A1 · 594 × 841 mm",
+    "letter": "US Letter · 8,5 × 11 Zoll",
+    "legal": "US Legal · 8,5 × 14 Zoll",
+    "5x7": "5 × 7 Zoll",
+    "8x10": "8 × 10 Zoll",
+    "11x14": "11 × 14 Zoll",
+    "12x18": "12 × 18 Zoll",
+    "square30": "Quadrat · 30 × 30 cm",
+    "custom": "Eigenes Format …",
+    "customShort": "Eigenes Format"
+  },
+  "styles": {
+    "bloom": "Unscharfes Cover als Hintergrund, mit Verlauf",
+    "classic": "Cremefarbenes Passepartout, schwarzer Rahmen, Farbbalken",
+    "gallery": "Breites warmes Passepartout, schmale Versalien",
+    "mono": "Ohne Rahmen, gepunktete Palette",
+    "noir": "Schwarzer Grund, quadratische Farbfelder",
+    "onyx": "Gallery-Typo auf fast schwarzem Grund",
+    "paper": "Gallery-Typo auf Weiß, ohne Rahmen",
+    "sand": "Gallery-Typo auf beigem Grund, ohne Rahmen"
+  }
+}

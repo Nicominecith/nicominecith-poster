@@ -1,0 +1,12 @@
+{
+  "name": "book",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/book/src",
+  "projectType": "application",
+  "tags": ["type:app", "scope:book"],
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {}
+  }
+}

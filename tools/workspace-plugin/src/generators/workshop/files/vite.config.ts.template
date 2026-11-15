@@ -1,0 +1,3 @@
+import { workshopApp } from "<%= offsetFromRoot %>tools/vite/workshop-app";
+
+export default workshopApp("<%= name %>", import.meta.dirname);

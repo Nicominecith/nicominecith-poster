@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "$schema": "<%= offsetFromRoot %>node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "<%= projectRoot %>/src",
+  "projectType": "application",
+  "tags": ["type:app", "scope:<%= name %>"],
+  "targets": {
+    "typecheck": {},
+    "lint": {}
+  }
+}

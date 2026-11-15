@@ -1,0 +1,12 @@
+{
+  "name": "workshop",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/workshop/src",
+  "projectType": "library",
+  "tags": ["type:lib"],
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {}
+  }
+}

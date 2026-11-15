@@ -1,0 +1,8 @@
+{
+  "name": "@freetsy/workspace-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "generators": "./generators.json"
+}

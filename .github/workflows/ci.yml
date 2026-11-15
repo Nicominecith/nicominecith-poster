@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Derive affected base and head
+        if: github.event_name == 'pull_request'
+        uses: nrwl/nx-set-shas@v4
+
+      - name: Type-check, lint and test
+        run: bunx nx ${{ github.event_name == 'pull_request' && 'affected' || 'run-many' }} -t typecheck lint test
+
+      - name: Format check
+        run: bun run format:check
+
+      - name: Build site
+        run: bun run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist/site
+          retention-days: 7
+
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+
+      - name: Install dependencies for the script-font fixtures
+        run: bun install --frozen-lockfile
+
+      - name: Install the toolchain from libs/renderer/rust-toolchain.toml
+        working-directory: libs/renderer
+        run: rustup toolchain install
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: libs/renderer/rust
+          key: ${{ hashFiles('libs/renderer/rust-toolchain.toml') }}
+
+      - name: Format and lint
+        run: bunx nx run renderer:rust-check
+
+      - name: Tests
+        run: bunx nx run renderer:rust-test

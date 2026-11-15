@@ -1,0 +1,8 @@
+dist
+node_modules
+bun.lock
+.nx
+*.tsbuildinfo
+libs/renderer/wasm
+libs/renderer/rust/target
+libs/fonts/src/script-faces

@@ -1,0 +1,446 @@
+{
+  "upload": {
+    "title": "Upload a cover",
+    "hint": "Click or drag an image in here",
+    "previewAlt": "Cover preview",
+    "replace": "Different image",
+    "remove": "Remove",
+    "processing": "Working on the image …"
+  },
+  "cropper": {
+    "title": "Crop the cover",
+    "hint": "Drag to move it, slider to zoom.",
+    "zoom": "Zoom",
+    "cancel": "Cancel",
+    "confirm": "Use it",
+    "processing": "Working …"
+  },
+  "preview": {
+    "eyebrow": "Preview",
+    "fallbackFormat": "Poster",
+    "pixelSize": "{{width}} × {{height}} px",
+    "paperSize": "{{width}} × {{height}} mm · {{dpi}} DPI",
+    "emptyTitle": "No poster yet",
+    "emptyHint": "Set a title and a tracklist, then the preview shows up here.",
+    "alt": "Poster preview: {{title}}",
+    "loading": "Drawing the preview …",
+    "zoom": "Zoom",
+    "zoomValue": "{{percent}} %"
+  },
+  "poster": {
+    "released": "Released",
+    "length": "Length",
+    "albumLength": "Album Length",
+    "recordLabel": "Record Label",
+    "lengthValue": "{{minutes}} min",
+    "textSource": "Text",
+    "premiere": "Premiere",
+    "runtime": "Runtime",
+    "published": "Published",
+    "pages": "Length",
+    "pagesValue_one": "{{count}} page",
+    "pagesValue_other": "{{count}} pages"
+  },
+  "settings": {
+    "eyebrow": "Settings",
+    "newPoster": "New poster",
+    "style": "Style",
+    "format": "Size",
+    "widthMm": "Width (mm)",
+    "heightMm": "Height (mm)",
+    "cover": "Cover",
+    "coverShape": "Image shape",
+    "coverShapeHint": "Album covers are square, film posters stand upright. Switching lets you crop the same picture again.",
+    "coverShape_square": "Square · 1:1",
+    "coverShape_portrait": "Portrait · 2:3",
+    "image": "Image",
+    "content": "Content",
+    "groupTitle": "Title",
+    "groupBody": "Below the title",
+    "artistSearch": "Artist search",
+    "contentHint": "Search an album and every field is filled in. Or just type it yourself.",
+    "contentTitle": "Album title",
+    "contentTitlePlaceholder": "Title of the poster",
+    "contentSubtitle": "Artist name",
+    "contentSubtitlePlaceholder": "e.g. artist",
+    "contentReleaseDate": "Release date",
+    "contentReleaseDatePlaceholder": "2007-10-10",
+    "contentReleaseDateHint": "Optional. The year alone, a year and month, or a full date, so 2007, 2007-10 or 2007-10-10. The poster prints it as precisely as you state it.",
+    "showReleaseDate": "Show release date",
+    "showSubtitle": "Show the artist name under the title",
+    "releaseDateLabel": "Heading for the release date",
+    "releaseDateLabelHint": "What the release date is called on the poster. Leave it empty for Released.",
+    "showAlbumLength": "Show album length",
+    "lengthLabel": "Heading for the length",
+    "lengthLabelHint": "What the length is called on the poster. Leave it empty for Album Length.",
+    "contentFormat": "Content format",
+    "contentFormatList": "List",
+    "contentFormatFreeform": "Free text",
+    "tracklistLabel": "Tracklist",
+    "tracklistHint": "The length is optional. Drag a row by its handle to move it.",
+    "trackTitlePlaceholder": "Title",
+    "trackDurationPlaceholder": "3:45",
+    "trackTitleAria": "Title of track {{number}}",
+    "trackEmphasize": "Make track {{number}} bold",
+    "trackDurationAria": "Length of track {{number}}",
+    "trackAdd": "Add track",
+    "trackReorder": "Move track {{number}}",
+    "trackRemove": "Remove track {{number}}",
+    "freeformLabel": "Text (one line = one poster line)",
+    "freeformPlaceholder": "Write whatever you want …",
+    "textScale": "Text size · {{percent}}%",
+    "tweaks": "Adjustments",
+    "codeGroup": "QR code",
+    "export": "Export",
+    "padding": "Inner spacing · {{percent}}%",
+    "titleAlign": "Alignment",
+    "titleAlignHint": "Applies to the title, the artist and the color palette.",
+    "titleAlign_left": "Left",
+    "titleAlign_center": "Center",
+    "titleAlign_right": "Right",
+    "showPalette": "Show color palette",
+    "codeKind": "Code on the poster",
+    "codeKindQr": "QR code",
+    "codeKindSpotify": "Spotify code",
+    "spotifyLabel": "Spotify link",
+    "spotifyHint": "Where the Spotify code on the poster points. An album, song, artist, playlist or podcast, copied out of Spotify. Without a valid link, no code ends up on the poster.",
+    "spotifyNote": "Creating the code has your browser query Spotify directly, which passes the link and your IP address to Spotify. More on that under <privacy>privacy</privacy>.",
+    "spotifyClear": "Clear it, no code on the poster",
+    "spotifyInvalid": "That is not a Spotify link. Expected is open.spotify.com/album/… or spotify:album:…",
+    "qrLabel": "QR code link",
+    "qrClear": "Clear it, no QR code on the poster",
+    "qrReset": "Reset to the album link",
+    "qrHint": "Where the QR code on the poster points. The album link by default, clearing the field removes the QR code.",
+    "qrHintNoSource": "Where the QR code on the poster points. Without a link, no QR code ends up on the poster.",
+    "fileFormat": "File format",
+    "resolution": "Resolution",
+    "resolutionFixed": "This format has a fixed pixel size. The DPI choice only applies to paper formats.",
+    "rightsNotice": "Only use your own images or private copies. By downloading you confirm that you hold the rights to the uploaded cover, or that you use the poster strictly in private and for yourself. Without those rights, selling it and passing it on are not allowed. Details in the <terms>terms of use</terms>.",
+    "exportCreate": "Create {{format}}",
+    "exportProgress": "Creating {{format}} … {{progress}}%",
+    "exportLarge": "This export contains a very large number of pixels and may take a little longer.",
+    "exportSoftware": "Your browser is using the compatible software renderer. This export may take a very long time.",
+    "exportReady": "Ready: {{name}}",
+    "exportSave": "Save {{format}}",
+    "exportCancel": "Cancel",
+    "exportSaveFailed": "Saving failed. You can try again.",
+    "exportFailed": "Could not create the {{format}}. Please try again.",
+    "exportFailedReason": "Could not create the {{format}}: {{reason}}"
+  },
+  "advanced": {
+    "enable": "Build it yourself",
+    "description": "The style stops deciding, you pick the sizes, fonts, and colors.",
+    "risk": "Anything goes here. If something slips off the poster, you can still download it.",
+    "reset": "Back to the style",
+    "sizes": "Sizes",
+    "typography": "Fonts",
+    "spacing": "Spacing",
+    "colors": "Colors",
+    "surfaceColors": "Background and code",
+    "textColors": "Text colors",
+    "palette": "Color palette",
+    "paletteColors": "Swatch colors",
+    "paletteCount": "How many colors",
+    "paletteShape": "Swatch shape",
+    "paletteShapeBar": "One bar",
+    "paletteShapeBlock": "Blocks",
+    "paletteShapeRound": "Rounded",
+    "paletteShapeCircle": "Circles",
+    "paletteBarStretch": "Bar fills the whole width",
+    "paletteSwatchSize": "Swatch size",
+    "paletteSwatchLink": "Keep width and height equal",
+    "paletteSwatchWidth": "Swatch width",
+    "paletteSwatchHeight": "Swatch height",
+    "paletteSwatchGap": "Between swatches",
+    "paletteNumbers": "Numbers",
+    "paletteNumbersShow": "Number the swatches",
+    "paletteNumberSize": "Number size",
+    "paletteNumberFont": "Number font",
+    "paletteNumberColor": "Number color",
+    "backgroundColor": "Background",
+    "backdropBlur": "Background blur",
+    "codeColor": "QR or Spotify code",
+    "titleColor": "Title",
+    "subtitleColor": "Subtitle",
+    "bodyColor": "Text",
+    "durationColor": "Track lengths",
+    "metadataLabelColor": "Info headings",
+    "metadataValueColor": "Info text",
+    "coverSize": "Cover",
+    "codeSize": "Code",
+    "sideColumnWidth": "Info column",
+    "columns": "Text columns",
+    "titleSize": "Title size",
+    "subtitleSize": "Subtitle size",
+    "bodySize": "Text size",
+    "metadataSize": "Info size",
+    "titleFont": "Title font",
+    "subtitleFont": "Subtitle font",
+    "bodyFont": "Text font",
+    "metadataFont": "Info font",
+    "innerPad": "Inner margin",
+    "coverGap": "Below the cover",
+    "titleGap": "Title to subtitle",
+    "paletteGap": "Above the palette",
+    "contentGap": "Above the tracklist",
+    "columnGap": "Between columns",
+    "rowGap": "Between rows",
+    "sideGap": "Between info blocks",
+    "paletteSwatch": "Palette color {{index}}"
+  },
+  "pipette": {
+    "pick": "Pick {{label}} from the poster",
+    "hint": "Click anywhere on the poster to take the color from there. Esc cancels.",
+    "cancel": "Cancel"
+  },
+  "lists": {
+    "reorder": "Move {{item}}",
+    "remove": "Remove {{item}}",
+    "emphasize": "Make {{item}} bold",
+    "nameAria": "{{item}}: name",
+    "detailAria": "{{item}}: second column",
+    "cast": {
+      "label": "Cast",
+      "hint": "The role is optional and sits to the right of the name. Drag a row by its handle to move it.",
+      "item": "cast member {{number}}",
+      "namePlaceholder": "Name",
+      "detailPlaceholder": "Role",
+      "showDetails": "Show roles next to the names",
+      "add": "Add cast member",
+      "samples": [
+        {
+          "name": "Lead actress",
+          "detail": "Heroine"
+        },
+        {
+          "name": "Lead actor",
+          "detail": "Antagonist"
+        },
+        {
+          "name": "Supporting actress",
+          "detail": "Best friend"
+        },
+        {
+          "name": "Supporting actor",
+          "detail": "Mentor"
+        }
+      ]
+    },
+    "awards": {
+      "label": "Awards",
+      "hint": "Prizes the film won, the year on the right. A film search fills in the best-known ones.",
+      "item": "award {{number}}",
+      "namePlaceholder": "Award",
+      "detailPlaceholder": "Year",
+      "showDetails": "Show years",
+      "add": "Add award",
+      "samples": [
+        {
+          "name": "Best Picture",
+          "detail": "2025"
+        },
+        {
+          "name": "Best Director",
+          "detail": "2025"
+        },
+        {
+          "name": "Best Original Score",
+          "detail": "2025"
+        }
+      ]
+    },
+    "chapters": {
+      "label": "Chapters",
+      "hint": "The table of contents, numbered like a tracklist. Optionally the page each chapter starts on, on the right.",
+      "item": "chapter {{number}}",
+      "namePlaceholder": "Chapter name",
+      "detailPlaceholder": "Page",
+      "showDetails": "Show page numbers",
+      "add": "Add chapter",
+      "samples": [
+        {
+          "name": "The Beginning",
+          "detail": "7"
+        },
+        {
+          "name": "The Journey",
+          "detail": "42"
+        },
+        {
+          "name": "The Turn",
+          "detail": "118"
+        },
+        {
+          "name": "The End",
+          "detail": "203"
+        }
+      ]
+    },
+    "characters": {
+      "label": "Characters",
+      "hint": "Who appears in the book, best known first. Optionally who they are, on the right.",
+      "item": "character {{number}}",
+      "namePlaceholder": "Name",
+      "detailPlaceholder": "Who are they?",
+      "showDetails": "Show descriptions",
+      "add": "Add character",
+      "samples": [
+        {
+          "name": "Heroine",
+          "detail": ""
+        },
+        {
+          "name": "Best friend",
+          "detail": ""
+        },
+        {
+          "name": "Antagonist",
+          "detail": ""
+        }
+      ]
+    },
+    "works": {
+      "label": "More works",
+      "hint": "Other books by the same author, the year each came out on the right.",
+      "item": "work {{number}}",
+      "namePlaceholder": "Title",
+      "detailPlaceholder": "Year",
+      "showDetails": "Show years",
+      "add": "Add work",
+      "samples": [
+        {
+          "name": "The first book",
+          "detail": "2010"
+        },
+        {
+          "name": "The second book",
+          "detail": "2014"
+        },
+        {
+          "name": "The latest book",
+          "detail": "2024"
+        }
+      ]
+    }
+  },
+  "listing": {
+    "format": "Display",
+    "format_tracklist": "Tracklist",
+    "format_freeform": "Summary",
+    "format_quote": "Quote",
+    "format_cast": "Cast",
+    "format_awards": "Awards",
+    "format_chapters": "Chapters",
+    "format_characters": "Characters",
+    "format_works": "More works",
+    "formatHint_tracklist": "An album's tracks.",
+    "formatHint_freeform": "What it is about, in a few sentences.",
+    "formatHint_quote": "A single line, set large.",
+    "formatHint_cast": "The cast, their roles on the right.",
+    "formatHint_awards": "The prizes the film won.",
+    "formatHint_chapters": "The table of contents, numbered like a tracklist.",
+    "formatHint_characters": "Who appears in the book.",
+    "formatHint_works": "What else the author has written."
+  },
+  "source": {
+    "show": "Name the text's source on the poster",
+    "label": "Source credit",
+    "hint": "A summary from Wikipedia is licensed under CC BY-SA 4.0. If you publish, give away or sell the poster, this credit has to be on it. For a poster just for yourself it is optional. If you write the text yourself, leave the field empty.",
+    "placeholder": "e.g. Wikipedia, “The Hobbit”, shortened · CC BY-SA 4.0",
+    "wikipedia": "Wikipedia, “{{title}}”",
+    "openLibrary": "Open Library, description",
+    "shortened": "shortened"
+  },
+  "infos": {
+    "label": "More info",
+    "hint_music": "Every line goes into the poster's info column, such as label, producer or studio. Delete whatever you don't need.",
+    "hint_film": "A film search suggests screenplay, music, cinematography, genre, rating, source material, filming locations and more. Tap a suggestion to put it on the poster. Deleted lines return to the suggestions.",
+    "hint_book": "A book search suggests series, genre, form, publisher, setting, era and original language. Tap a suggestion to put it on the poster. Deleted lines return to the suggestions.",
+    "suggestions": "Personal lines",
+    "fromSource": "From the search",
+    "suggestions_music": [
+      {
+        "label": "Favorite song",
+        "value": ""
+      },
+      {
+        "label": "First heard",
+        "value": ""
+      },
+      {
+        "label": "My rating",
+        "value": "★★★★★"
+      }
+    ],
+    "suggestions_film": [
+      {
+        "label": "Watched on",
+        "value": ""
+      },
+      {
+        "label": "Watched with",
+        "value": ""
+      },
+      {
+        "label": "Cinema",
+        "value": ""
+      },
+      {
+        "label": "My rating",
+        "value": "★★★★★"
+      }
+    ],
+    "suggestions_book": [
+      {
+        "label": "Read",
+        "value": ""
+      },
+      {
+        "label": "Favorite character",
+        "value": ""
+      },
+      {
+        "label": "My edition",
+        "value": ""
+      },
+      {
+        "label": "My rating",
+        "value": "★★★★★"
+      }
+    ],
+    "labelPlaceholder": "Heading",
+    "valuePlaceholder": "Text",
+    "labelAria": "Heading of info {{number}}",
+    "valueAria": "Text of info {{number}}",
+    "add": "Add info",
+    "reorder": "Move info {{number}}",
+    "remove": "Remove info {{number}}"
+  },
+  "formats": {
+    "social": "Social media · 1080 × 1920 px",
+    "a5": "A5 · 148 × 210 mm",
+    "a4": "A4 · 210 × 297 mm",
+    "a3": "A3 · 297 × 420 mm",
+    "a2": "A2 · 420 × 594 mm",
+    "a1": "A1 · 594 × 841 mm",
+    "letter": "US Letter · 8.5 × 11 in",
+    "legal": "US Legal · 8.5 × 14 in",
+    "5x7": "5 × 7 in",
+    "8x10": "8 × 10 in",
+    "11x14": "11 × 14 in",
+    "12x18": "12 × 18 in",
+    "square30": "Square · 30 × 30 cm",
+    "custom": "Custom size …",
+    "customShort": "Custom size"
+  },
+  "styles": {
+    "bloom": "Blurred cover as the background, with a gradient",
+    "classic": "Cream passe-partout, black frame, color bar",
+    "gallery": "Wide warm passe-partout, narrow capitals",
+    "mono": "No frame, dotted palette",
+    "noir": "Black ground, square color fields",
+    "onyx": "Gallery type on an almost black ground",
+    "paper": "Gallery type on white, no frame",
+    "sand": "Gallery type on a beige ground, no frame"
+  }
+}

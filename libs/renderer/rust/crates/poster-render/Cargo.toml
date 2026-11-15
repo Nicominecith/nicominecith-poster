@@ -1,0 +1,24 @@
+[package]
+name = "poster-render"
+description = "Lays out and paints a poster scene, whole or band by band."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+poster-model.workspace = true
+poster-canvas.workspace = true
+poster-text.workspace = true
+
+[dev-dependencies]
+poster-testkit.workspace = true
+serde_json.workspace = true
+
+[features]
+default = ["scripts"]
+scripts = ["poster-text/scripts"]
+
+[lints]
+workspace = true

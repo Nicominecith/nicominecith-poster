@@ -1,0 +1,68 @@
+{
+  "bookHome": {
+    "eyebrow": "Projekt · Nr · 003",
+    "titleTop": "Buch",
+    "titleBottom": "Werkstatt"
+  },
+  "book": {
+    "contentHint": "Such ein Buch, dann sind alle Felder gefüllt. Oder tipp einfach selbst.",
+    "search": "Buchsuche",
+    "title": "Buchtitel",
+    "subtitle": "Autor·in",
+    "subtitleHint": "Steht unter dem Titel, wie der Interpret auf einem Albumposter.",
+    "subtitlePlaceholder": "z. B. J. R. R. Tolkien",
+    "showSubtitle": "Autor·in unter dem Titel anzeigen",
+    "releaseDate": "Erscheinungsdatum",
+    "showReleaseDate": "Erscheinungsdatum anzeigen",
+    "releaseDateLabelHint": "So heißt das Erscheinungsdatum auf dem Poster. Leer lassen für Erschienen.",
+    "showLength": "Seitenzahl anzeigen",
+    "lengthLabelHint": "So heißt die Seitenzahl auf dem Poster. Leer lassen für Umfang.",
+    "length": "Seiten",
+    "lengthHint": "Optional. Das Poster druckt zum Beispiel „320 Seiten“.",
+    "lengthInvalid": "Gib die Seitenzahl als ganze Zahl ein, zum Beispiel 320.",
+    "quoteFormat": "Erster Satz",
+    "quoteLabel": "Erster Satz oder Lieblingszitat",
+    "quoteHint": "Bei der Buchsuche steht hier der erste Satz des Buchs, wenn er bekannt ist. Du kannst auch dein Lieblingszitat eintragen. Sätze aus Büchern sind meist urheberrechtlich geschützt, ohne Erlaubnis also nur für ein privates Poster.",
+    "summaryLabel": "Zusammenfassung (eine Zeile = ein Absatz)",
+    "summaryHint": "Bei der Buchsuche kommt hier die Handlung aus der Wikipedia oder die Beschreibung von Open Library rein, auf ein paar Sätze gekürzt. Wikipedia-Text steht unter CC BY-SA 4.0, Beschreibungen können Verlagstexte sein. Für ein veröffentlichtes oder verkauftes Poster gilt das in den Nutzungsbedingungen Gesagte.",
+    "seriesValue": "{{name}} · Band {{position}}",
+    "quoteValue": "„{{text}}“",
+    "previewEmptyHint": "Titel und Kapitel festlegen, dann erscheint die Vorschau hier.",
+    "qrHint": "Ziel des QR-Codes auf dem Poster. Standardmäßig der Wikipedia-Artikel oder die Open-Library-Seite des Buchs, leeren entfernt den QR-Code.",
+    "qrReset": "Auf Buch-Link zurücksetzen"
+  },
+  "bookSearch": {
+    "placeholder": "Buch oder Autor·in suchen …",
+    "title": "Buch suchen",
+    "description": "Bücher aus Open Library, ergänzt um Wikidata und Wikipedia. Kapitel kommen aus Ausgaben, die ihr Inhaltsverzeichnis erfasst haben.",
+    "note": "Die Suche nutzt Open Library, Wikidata und Wikipedia und übernimmt von dort nur Text, also Titel, Autor·in, Kapitel, Figuren und Handlung. Bilder lädt sie nicht. Mehr dazu im <privacy>Datenschutz</privacy>.",
+    "editionCount_one": "{{count}} Ausgabe",
+    "editionCount_other": "{{count}} Ausgaben",
+    "loading": "Lade Buch …",
+    "loadFailed": "Buch konnte nicht geladen werden.",
+    "chapterCount_one": "{{count}} Kapitel",
+    "chapterCount_other": "{{count}} Kapitel",
+    "chooseOther": "Anderes Buch wählen",
+    "sources_wikipedia": "Werk, Ausgaben, Kapitel und Verlag: <openlibrary>Open Library</openlibrary>. Titel, Figuren, Genre, Reihe und erster Satz, wo bekannt: <wikidata>Wikidata</wikidata> (CC0). Handlung: <wikipedia>Wikipedia, „{{title}}“</wikipedia>, <license>CC BY-SA 4.0</license>.",
+    "sources_openlibrary": "Werk, Ausgaben, Kapitel und Verlag: <openlibrary>Open Library</openlibrary>. Titel, Figuren, Genre, Reihe und erster Satz, wo bekannt: <wikidata>Wikidata</wikidata> (CC0). Zusammenfassung: Beschreibung von <description>Open Library</description>, oft ein Klappentext des Verlags.",
+    "sources_none": "Werk, Ausgaben, Kapitel und Verlag: <openlibrary>Open Library</openlibrary>. Titel, Figuren, Genre, Reihe und erster Satz, wo bekannt: <wikidata>Wikidata</wikidata> (CC0). Eine Zusammenfassung wurde nicht gefunden.",
+    "resetContent": "Auf Buchwerte zurücksetzen",
+    "replaceHint": "Beide Optionen füllen Titel, Autor·in, Datum, Seiten, Infos, Kapitel, Figuren, Werke, ersten Satz und Zusammenfassung neu. Was du dort selbst geändert hast, ist danach weg."
+  },
+  "bookCredits": {
+    "author": "Autor·in",
+    "series": "Reihe",
+    "genre": "Genre",
+    "form": "Form",
+    "publisher": "Verlag",
+    "places": "Schauplatz",
+    "era": "Epoche",
+    "language": "Originalsprache"
+  },
+  "bookDefaults": {
+    "title": "Mein Buch",
+    "subtitle": "Autorin",
+    "quote": "„Hier steht der erste Satz deines Lieblingsbuchs.“",
+    "summary": "Hier steht, worum es in deinem Buch geht.\nEin zweiter Absatz, wenn die Geschichte mehr braucht."
+  }
+}

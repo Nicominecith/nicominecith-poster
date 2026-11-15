@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "../styles/src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@freetsy/ui/components",
+    "utils": "@freetsy/ui/lib/utils",
+    "ui": "@freetsy/ui/components",
+    "lib": "@freetsy/ui/lib",
+    "hooks": "@freetsy/ui/hooks"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Nicominecith Poster",
+    "description": "Aus jedem Album und jedem Film ein druckfertiges Poster mit Trackliste oder Besetzung, Farben und QR-Code."
+  },
+  "language": {
+    "label": "Sprache",
+    "ariaLabel": "Sprache wählen"
+  },
+  "nav": {
+    "brand": "Nicominecith Poster",
+    "back": "Zurück zur Werkstatt",
+    "workshops": "Werkstätten",
+    "music": "Musikwerkstatt",
+    "film": "Filmwerkstatt",
+    "book": "Buchwerkstatt",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "validation": {
+    "releaseDate": "Gib ein gültiges Datum ein, zum Beispiel 2007, 2007-10 oder 10.10.2007.",
+    "duration": "Gib die Länge als Minuten:Sekunden oder Stunden:Minuten:Sekunden ein.",
+    "size": "Gib eine Größe zwischen {{min}} und {{max}} mm ein.",
+    "posterInput": "Bitte korrigiere die markierten Eingaben vor dem Download.",
+    "cancelAlbum": "Albumimport abbrechen",
+    "cancelFilm": "Filmimport abbrechen",
+    "cancelBook": "Buchimport abbrechen"
+  },
+  "errors": {
+    "imageType": "Bitte eine Bilddatei auswählen (JPG, PNG, WebP …).",
+    "imageTooLarge": "Das Bild ist zu groß (max. 20 MB).",
+    "imageLoad": "Bild konnte nicht geladen werden.",
+    "imageDecode": "Bild konnte nicht dekodiert werden.",
+    "canvasUnsupported": "Canvas 2D wird von diesem Browser nicht unterstützt.",
+    "cropFailed": "Zuschnitt fehlgeschlagen.",
+    "coverRead": "Cover konnte nicht gelesen werden.",
+    "posterRender": "Poster konnte nicht gerendert werden.",
+    "browserTooOld": "Dein Browser ist zu alt, um das Poster zu zeichnen. Bitte aktualisiere ihn (Safari 16.4, Chrome 91, Firefox 89 oder neuer).",
+    "qrCreate": "QR-Code konnte nicht erstellt werden.",
+    "spotifyCodeUnreachable": "Spotify ist gerade nicht erreichbar.",
+    "spotifyCodeUnreadable": "Spotify-Code konnte nicht gelesen werden.",
+    "spotifyCodeCreate": "Spotify-Code konnte nicht erstellt werden.",
+    "fontLoad": "Schriftart konnte nicht geladen werden.",
+    "pdfCreate": "PDF konnte nicht erstellt werden.",
+    "pdfEmbed": "Bild konnte nicht ins PDF eingebettet werden.",
+    "pdfSave": "PDF konnte nicht gespeichert werden.",
+    "itunesUnreachable": "iTunes ist gerade nicht erreichbar.",
+    "musicbrainzUnreachable": "MusicBrainz ist gerade nicht erreichbar.",
+    "albumNotFound": "Album {{id}} nicht gefunden.",
+    "albumNotFoundPickAgain": "Album {{id}} nicht gefunden. Bitte über die Suche neu auswählen.",
+    "noTracklist": "Für dieses Album gibt es keine Titelliste.",
+    "wikidataUnreachable": "Wikidata ist gerade nicht erreichbar.",
+    "wikipediaUnreachable": "Wikipedia ist gerade nicht erreichbar.",
+    "filmNotFound": "Film {{id}} nicht gefunden. Bitte über die Suche neu auswählen.",
+    "openLibraryUnreachable": "Open Library ist gerade nicht erreichbar.",
+    "bookNotFound": "Buch {{id}} nicht gefunden. Bitte über die Suche neu auswählen."
+  },
+  "prefs": {
+    "open": "Einstellungen öffnen",
+    "title": "Einstellungen",
+    "description": "Sprache, Darstellung und Cover. Alles bleibt nur auf deinem Gerät gespeichert.",
+    "theme": "Darstellung",
+    "theme_system": "Automatisch",
+    "theme_light": "Hell",
+    "theme_dark": "Dunkel",
+    "autoCover": "Cover automatisch laden",
+    "autoCoverHint": "Holt das passende Cover selbst (Spotify-Link, iTunes, Wikipedia, Open Library). Du kannst jederzeit ein eigenes Bild wählen.",
+    "credit": "Nicominecith Poster von Nicominecith_clips. Basiert auf Freetsy (AGPL-3.0)."
+  }
+}

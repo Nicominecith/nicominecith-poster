@@ -1,0 +1,8 @@
+# The poster renderer is per-pixel work end to end: tiny-skia's blend pipeline,
+# the backdrop blur and the JPEG encoder all run over tens of millions of
+# pixels. Baseline wasm SIMD lets each of those move four lanes at a time and
+# roughly halves a print-size render, so it is a build-wide setting rather than
+# something a single build command has to remember. Every engine the app
+# supports has shipped it since 2023 (Safari 16.4, Chrome 91, Firefox 89).
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "target-feature=+simd128"]

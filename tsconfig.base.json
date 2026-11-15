@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable", "WebWorker.ImportScripts"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": false,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@freetsy/catalog": ["./libs/catalog/src/index.ts"],
+      "@freetsy/fonts": ["./libs/fonts/src/index.ts"],
+      "@freetsy/i18n": ["./libs/i18n/src/index.ts"],
+      "@freetsy/poster": ["./libs/poster/src/index.ts"],
+      "@freetsy/renderer": ["./libs/renderer/src/index.ts"],
+      "@freetsy/renderer/export": ["./libs/renderer/src/export.ts"],
+      "@freetsy/styles": ["./libs/styles/src/index.css"],
+      "@freetsy/ui/*": ["./libs/ui/src/*"],
+      "@freetsy/utils": ["./libs/utils/src/index.ts"],
+      "@freetsy/workshop": ["./libs/workshop/src/index.ts"],
+      "@freetsy/workspace-plugin": ["./tools/workspace-plugin/src/index.ts"]
+    }
+  }
+}

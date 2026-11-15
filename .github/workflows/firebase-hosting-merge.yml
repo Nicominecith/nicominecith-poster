@@ -1,0 +1,44 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Require operator details
+        if: ${{ vars.SITE_OWNER == '' || vars.SITE_ADDRESS == '' || vars.SITE_EMAIL == '' }}
+        run: |
+          echo "::error::Set the SITE_OWNER, SITE_ADDRESS and SITE_EMAIL repository variables before deploying."
+          exit 1
+
+      - name: Build
+        run: bun run build
+        env:
+          VITE_SITE_OWNER: ${{ vars.SITE_OWNER }}
+          VITE_SITE_ADDRESS: ${{ vars.SITE_ADDRESS }}
+          VITE_SITE_EMAIL: ${{ vars.SITE_EMAIL }}
+          VITE_POSTER_BRAND: ${{ vars.POSTER_BRAND }}
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FREETSY }}"
+          channelId: live
+          projectId: freetsy

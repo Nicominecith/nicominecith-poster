@@ -1,0 +1,30 @@
+{
+  "name": "site",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "tags": ["type:deploy"],
+  "implicitDependencies": ["music", "film", "book"],
+  "targets": {
+    "build": {
+      "dependsOn": [
+        {
+          "projects": ["music", "film", "book"],
+          "target": "build"
+        }
+      ],
+      "inputs": [
+        "{projectRoot}/**/*",
+        {
+          "dependentTasksOutputFiles": "**/*",
+          "transitive": false
+        }
+      ],
+      "outputs": ["{workspaceRoot}/dist/site"],
+      "command": "node apps/site/assemble.mjs"
+    },
+    "preview": {
+      "dependsOn": ["build"],
+      "command": "bunx --bun vite preview --outDir dist/site --port 4173 --strictPort"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../../ui/src";
+@source "../../workshop/src";
+@source "../../../apps/*/src";
+:root {
+  --stroke-icon: 1.5;
+  --stroke-check: 2;
+  --stroke-registration: 1.5px;
+  --print-paper: #fbf9f5;
+  --print-mat: #ded5c4;
+  --print-classic-mat: #f4f1ea;
+  --print-ink: #2c2822;
+  --print-muted: #9a9182;
+  --print-sand: #e4dac7;
+  --print-onyx: #1a1917;
+  --print-onyx-ink: #f2efe8;
+  --print-onyx-muted: rgb(242 239 232 / 0.5);
+  --print-black: #000;
+  --print-white: #fff;
+  --print-white-muted: rgb(255 255 255 / 0.55);
+  --print-white-soft: rgb(255 255 255 / 0.7);
+  --print-brand: rgb(12 11 8 / 0.65);
+  --print-brand-ink: #f5f2ea;
+  --poster-preview-height: 72vh;
+  --poster-backdrop-scale: 1.35;
+  --poster-backdrop-blur: 1.5cqw;
+  --poster-scrim: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.05) 0%,
+    rgb(0 0 0 / 0.25) 45%,
+    rgb(0 0 0 / 0.93) 100%
+  );
+  --poster-cover-shadow: 0 2cqw 6cqw rgb(0 0 0 / 0.55);
+  /* Two paper surfaces, three ink ranks, one accent. Every colour in the app
+     is one of these; a `-soft` variant is the same colour, held back. */
+  --surface: #f5f2ea;
+  --surface-raised: #fffdf9;
+  --primary: #16140f;
+  --secondary: #4a4638;
+  --tertiary: #d9d2c0;
+  --accent: #b65c38;
+  --on-primary: #f5f2ea;
+
+  --primary-soft: color-mix(in srgb, var(--primary) 5%, transparent);
+  --secondary-soft: color-mix(in srgb, var(--secondary) 70%, transparent);
+  --tertiary-soft: color-mix(in srgb, var(--tertiary) 40%, transparent);
+  --accent-soft: color-mix(in srgb, var(--accent) 5%, transparent);
+  --on-primary-soft: color-mix(in srgb, var(--on-primary) 70%, transparent);
+  --overlay: rgb(0 0 0 / 0.7);
+
+  --font-archivo-black: "Archivo Black", sans-serif;
+  --font-anton: "Anton", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-mono-ui-family: "JetBrains Mono", monospace;
+}
+
+@theme inline {
+  --spacing-poster-outer: var(--poster-outer);
+  --spacing-poster-inner: var(--poster-inner);
+  --spacing-poster-cover: var(--poster-cover);
+  --spacing-poster-cover-gap: var(--poster-cover-gap);
+  --spacing-poster-artist-gap: var(--poster-artist-gap);
+  --spacing-poster-side: var(--poster-side);
+  --spacing-poster-side-gap: var(--poster-side-gap);
+  --spacing-poster-palette-top: var(--poster-palette-top);
+  --spacing-poster-palette-width: var(--poster-palette-width);
+  --spacing-poster-palette-height: var(--poster-palette-height);
+  --spacing-poster-palette-gap: var(--poster-palette-gap);
+  --spacing-poster-palette-index-gap: var(--poster-palette-index-gap);
+  --spacing-poster-track-gap: var(--poster-track-gap);
+  --spacing-poster-track-column-gap: var(--poster-track-column-gap);
+  --spacing-poster-content-gap: var(--poster-content-gap);
+  --spacing-poster-duration-gap: var(--poster-duration-gap);
+  --spacing-poster-wave-height: var(--poster-wave-height);
+  --spacing-poster-wave-width: var(--poster-wave-width);
+  --spacing-poster-wave-gap: var(--poster-wave-gap);
+  --spacing-poster-brand-inset: var(--poster-brand-inset);
+  --spacing-poster-brand-padding-y: var(--poster-brand-padding-y);
+  --text-poster-title: var(--poster-title);
+  --text-poster-artist: var(--poster-artist);
+  --text-poster-track: var(--poster-track);
+  --text-poster-credit-label: var(--poster-credit-label);
+  --text-poster-credit-value: var(--poster-credit-value);
+  --text-poster-brand: var(--poster-brand);
+  --text-poster-palette-index: var(--poster-palette-index);
+  --color-poster-paper: var(--poster-paper);
+  --color-poster-mat: var(--poster-mat);
+  --color-poster-ink: var(--poster-ink);
+  --color-poster-muted: var(--poster-muted);
+  --color-poster-title-ink: var(--poster-title-ink);
+  --color-poster-subtitle-ink: var(--poster-subtitle-ink);
+  --color-poster-body-ink: var(--poster-body-ink);
+  --color-poster-duration-ink: var(--poster-duration-ink);
+  --color-poster-credit-ink: var(--poster-credit-ink);
+  --color-poster-credit-muted: var(--poster-credit-muted);
+  --color-print-brand: var(--print-brand);
+  --color-print-brand-ink: var(--print-brand-ink);
+  --font-poster-display: var(--poster-title-font);
+  --font-poster-subtitle: var(--poster-subtitle-font);
+  --font-poster-body: var(--poster-body-font);
+  --font-poster-metadata: var(--poster-metadata-font);
+  --leading-poster-title: var(--poster-title-leading);
+  --leading-poster-body: var(--poster-body-leading);
+  --tracking-poster-title: var(--poster-title-tracking);
+  --tracking-print-brand: 0.08em;
+  --leading-display: 0.95;
+  --spacing-upload-stage: 75vh;
+  --spacing-editor-sidebar: 23rem;
+  --spacing-dialog-height: calc(100dvh - var(--spacing-lg) * 2);
+  --spacing-dialog-width: calc(100% - var(--spacing-lg) * 2);
+  --blur-poster-backdrop: var(--poster-backdrop-blur);
+  --shadow-poster-cover: var(--poster-cover-shadow);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-soft: var(--secondary-soft);
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-soft: var(--tertiary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-primary: var(--on-primary);
+  --color-on-primary-soft: var(--on-primary-soft);
+  --color-overlay: var(--overlay);
+
+  /* The role names shadcn/ui generates against, pointed at the same palette so
+     a freshly added component fits without being restyled first. */
+  --color-background: var(--surface);
+  --color-foreground: var(--primary);
+  --color-card: var(--surface-raised);
+  --color-card-foreground: var(--primary);
+  --color-popover: var(--surface-raised);
+  --color-popover-foreground: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary-foreground: var(--on-primary);
+  --color-muted: var(--tertiary);
+  --color-muted-foreground: var(--secondary);
+  --color-border: var(--tertiary);
+  --color-input: var(--tertiary);
+  --color-ring: var(--accent);
+  --color-destructive: var(--accent);
+
+  /* The only step sizes the interface uses for padding, margin and gap. */
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.5rem;
+  --spacing-m: 0.75rem;
+  --spacing-l: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  --tracking-ui: 0.15em;
+  --tracking-eyebrow: 0.2em;
+  --tracking-brand: 0.3em;
+  --text-2xs: 0.65rem;
+
+  --font-display: var(--font-archivo-black);
+  --font-body: var(--font-inter);
+  --font-mono-ui: var(--font-mono-ui-family);
+
+  /* Print, not app chrome: every corner in this UI is square. */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+/* Inline feTurbulence noise tinted with the ink color, so paper fiber costs
+   no image request. The two variants differ only in grain strength. */
+body {
+  background-color: var(--surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.086 0 0 0 0 0.078 0 0 0 0 0.059 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color: var(--primary);
+}
+
+.bg-surface-raised {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.086 0 0 0 0 0.078 0 0 0 0 0.059 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+@utility border-poster-frame {
+  border-width: var(--poster-frame);
+}
+@utility scale-poster-backdrop {
+  scale: var(--poster-backdrop-scale);
+}
+@utility bg-poster-scrim {
+  background-image: var(--poster-scrim);
+}
+@utility grid-cols-editor {
+  grid-template-columns: minmax(0, 1fr) var(--spacing-editor-sidebar);
+}
+
+/* Nicominecith Poster: dark theme + touch/mobile polish */
+:root[data-theme="dark"] {
+  --surface: #14120e;
+  --surface-raised: #1d1a15;
+  --primary: #f5f2ea;
+  --secondary: #c9c3b0;
+  --tertiary: #3a352a;
+  --accent: #e0825a;
+  --on-primary: #16140f;
+  color-scheme: dark;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+  button,
+  [role="button"] {
+    min-height: 2.5rem;
+  }
+}

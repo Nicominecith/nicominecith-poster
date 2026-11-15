@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freetsy-Posterwerkstatt</title>
+    <meta
+      name="description"
+      content="Aus jedem Album, jedem Film und jedem Buch ein druckfertiges Poster mit Farben und QR-Code."
+    />
+  </head>
+  <body class="flex min-h-full flex-col font-body antialiased">
+    <div id="root" class="flex min-h-full flex-1 flex-col"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

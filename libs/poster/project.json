@@ -1,0 +1,12 @@
+{
+  "name": "poster",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/poster/src",
+  "projectType": "library",
+  "tags": ["type:lib"],
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {}
+  }
+}

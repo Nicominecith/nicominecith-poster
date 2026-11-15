@@ -1,0 +1,30 @@
+[package]
+name = "poster-text"
+description = "Fonts, fallback chains, shaping, line breaking and glyph rasterization."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+fontdue.workspace = true
+poster-model.workspace = true
+poster-canvas.workspace = true
+tiny-skia.workspace = true
+rustybuzz = { workspace = true, optional = true }
+unicode-bidi = { workspace = true, optional = true }
+unicode-segmentation = { workspace = true, optional = true }
+wuff = { workspace = true, optional = true }
+
+[dev-dependencies]
+poster-testkit.workspace = true
+
+[features]
+default = ["scripts"]
+# Shaping, bidi, grapheme clusters and WOFF2: what Hindi, Arabic, Thai or
+# Japanese text needs and Latin, Greek or Cyrillic text never does.
+scripts = ["dep:rustybuzz", "dep:unicode-bidi", "dep:unicode-segmentation", "dep:wuff"]
+
+[lints]
+workspace = true

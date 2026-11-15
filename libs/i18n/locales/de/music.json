@@ -1,0 +1,60 @@
+{
+  "home": {
+    "eyebrow": "Projekt · Nr · 001",
+    "titleTop": "Musik",
+    "titleBottom": "Werkstatt"
+  },
+  "search": {
+    "placeholder": "Album oder Interpret suchen …",
+    "searching": "Suche …",
+    "failed": "Suche gerade nicht möglich.",
+    "empty": "Keine Treffer.",
+    "title": "Album suchen",
+    "description": "iTunes und MusicBrainz zusammen. Dasselbe Album kann aus beiden Quellen kommen, jeweils mit eigener Trackliste.",
+    "hint": "Mindestens zwei Zeichen eingeben.",
+    "kind": {
+      "album": "Album",
+      "single": "Single",
+      "ep": "EP"
+    },
+    "releaseCount_one": "{{count}} Pressung",
+    "releaseCount_other": "{{count}} Pressungen",
+    "note": "Die Suche nutzt iTunes und MusicBrainz und übernimmt von dort nur Text, also Titel, Interpret und Trackliste. Bilder lädt sie nicht. Mehr dazu im <privacy>Datenschutz</privacy>.",
+    "loading": "Lade Trackliste …",
+    "loadFailed": "Album konnte nicht geladen werden.",
+    "trackCount_one": "{{count}} Titel",
+    "trackCount_other": "{{count}} Titel",
+    "chooseOther": "Anderes Album wählen",
+    "resetContent": "Auf Albumwerte zurücksetzen",
+    "replaceHint": "Jede dieser Optionen füllt Überschrift, Untertitel, Datum und Trackliste neu. Was du dort selbst geändert hast, ist danach weg.",
+    "editionTitle": "Welche Ausgabe?",
+    "editionDescription": "Dieses Album gibt es in mehreren Fassungen mit unterschiedlich langer Trackliste.",
+    "editionChange": "Ausgabe ändern",
+    "editionUse": "Diese Ausgabe verwenden",
+    "editionInUse": "Diese Ausgabe behalten",
+    "editionUnknownDate": "Jahr unbekannt",
+    "editionLoading": "Suche Ausgaben …"
+  },
+  "contentDefaults": {
+    "title": "Mein Album",
+    "subtitle": "Dein Künstlername",
+    "tracks": [
+      {
+        "title": "Intro",
+        "duration": "0:42"
+      },
+      {
+        "title": "Erster Song",
+        "duration": "3:18"
+      },
+      {
+        "title": "Zweiter Song",
+        "duration": "4:05"
+      },
+      {
+        "title": "Outro",
+        "duration": "1:57"
+      }
+    ]
+  }
+}

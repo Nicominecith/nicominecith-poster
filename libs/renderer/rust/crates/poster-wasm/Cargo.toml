@@ -1,0 +1,30 @@
+[package]
+name = "poster-wasm"
+description = "The renderer's WebAssembly entry points: preview pixels, JPEG exports and banded exports."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+console_error_panic_hook.workspace = true
+jpeg-encoder.workspace = true
+poster-model.workspace = true
+poster-render.workspace = true
+serde_json.workspace = true
+wasm-bindgen.workspace = true
+
+[dev-dependencies]
+poster-testkit.workspace = true
+
+[features]
+default = ["scripts"]
+# The app loads the build with this only for posters whose text needs it.
+scripts = ["poster-render/scripts"]
+
+[lints]
+workspace = true

@@ -1,0 +1,52 @@
+{
+  "name": "renderer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/renderer/src",
+  "projectType": "library",
+  "tags": ["type:lib"],
+  "namedInputs": {
+    "rust": [
+      "{projectRoot}/rust/**/*",
+      "!{projectRoot}/rust/target/**/*",
+      "{projectRoot}/.cargo/**/*",
+      "{projectRoot}/rust-toolchain.toml"
+    ]
+  },
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {},
+    "rust-check": {
+      "cache": true,
+      "inputs": ["rust"],
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "cargo fmt --manifest-path rust/Cargo.toml --all --check && cargo clippy --manifest-path rust/Cargo.toml --workspace --all-targets -- -D warnings && cargo clippy --manifest-path rust/Cargo.toml --workspace --all-targets --no-default-features -- -D warnings"
+    },
+    "rust-test": {
+      "cache": true,
+      "inputs": ["rust", "{workspaceRoot}/libs/fonts/assets/**/*"],
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "cargo test --manifest-path rust/Cargo.toml --workspace --release && cargo test --manifest-path rust/Cargo.toml --workspace --release --no-default-features"
+    },
+    "build-wasm": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": ["rust"],
+      "outputs": ["{projectRoot}/wasm"],
+      "options": {
+        "cwd": "{projectRoot}",
+        "parallel": false,
+        "commands": [
+          "cargo build --manifest-path rust/Cargo.toml -p poster-wasm --target wasm32-unknown-unknown --release --no-default-features",
+          "wasm-bindgen --target web --out-name poster_render --out-dir wasm/poster-render rust/target/wasm32-unknown-unknown/release/poster_wasm.wasm",
+          "cargo build --manifest-path rust/Cargo.toml -p poster-wasm --target wasm32-unknown-unknown --release",
+          "wasm-bindgen --target web --out-name poster_render --out-dir wasm/poster-render-scripts rust/target/wasm32-unknown-unknown/release/poster_wasm.wasm"
+        ]
+      }
+    }
+  }
+}

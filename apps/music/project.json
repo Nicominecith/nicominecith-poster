@@ -1,0 +1,11 @@
+{
+  "name": "music",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/music/src",
+  "projectType": "application",
+  "tags": ["type:app", "scope:music"],
+  "targets": {
+    "typecheck": {},
+    "lint": {}
+  }
+}

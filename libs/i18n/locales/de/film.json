@@ -1,0 +1,70 @@
+{
+  "filmHome": {
+    "eyebrow": "Projekt · Nr · 002",
+    "titleTop": "Film",
+    "titleBottom": "Werkstatt"
+  },
+  "film": {
+    "contentHint": "Such einen Film oder eine Serie, dann sind alle Felder gefüllt. Oder tipp einfach selbst.",
+    "search": "Filmsuche",
+    "title": "Filmtitel",
+    "subtitle": "Regie",
+    "subtitleHint": "Steht unter dem Titel, wie der Interpret auf einem Albumposter.",
+    "subtitlePlaceholder": "z. B. Christopher Nolan",
+    "showSubtitle": "Regie unter dem Titel anzeigen",
+    "releaseDate": "Erscheinungsdatum",
+    "showReleaseDate": "Erscheinungsdatum anzeigen",
+    "releaseDateLabelHint": "So heißt das Erscheinungsdatum auf dem Poster. Leer lassen für Premiere.",
+    "showLength": "Laufzeit anzeigen",
+    "lengthLabelHint": "So heißt die Laufzeit auf dem Poster. Leer lassen für Laufzeit.",
+    "length": "Laufzeit (Minuten)",
+    "lengthHint": "Optional. Ganze Minuten, das Poster druckt zum Beispiel „148 Min.“.",
+    "lengthInvalid": "Gib die Laufzeit als ganze Minuten ein, zum Beispiel 148.",
+    "quoteFormat": "Lieblingszitat",
+    "quoteLabel": "Zitat",
+    "quoteHint": "Der Satz aus dem Film, der hängen geblieben ist. Mit Anführungszeichen wirkt er auf dem Poster am besten. Filmzitate sind meist urheberrechtlich geschützt, ohne Erlaubnis also nur für ein privates Poster.",
+    "summaryLabel": "Zusammenfassung (eine Zeile = ein Absatz)",
+    "summaryHint": "Bei der Filmsuche kommt hier die Handlung aus der Wikipedia rein, auf ein paar Sätze gekürzt. Lange Absätze brechen auf dem Poster automatisch um. Wikipedia-Text steht unter CC BY-SA 4.0, für ein veröffentlichtes oder verkauftes Poster gilt das in den Nutzungsbedingungen Gesagte.",
+    "previewEmptyHint": "Titel und Besetzung festlegen, dann erscheint die Vorschau hier.",
+    "qrHint": "Ziel des QR-Codes auf dem Poster. Standardmäßig der Wikipedia-Artikel des Films, leeren entfernt den QR-Code.",
+    "qrReset": "Auf Film-Link zurücksetzen"
+  },
+  "filmSearch": {
+    "placeholder": "Film oder Serie suchen …",
+    "title": "Film suchen",
+    "description": "Filme und Serien aus Wikidata. Regie, Besetzung und Laufzeit kommen von dort, die Zusammenfassung aus der Wikipedia.",
+    "note": "Die Suche nutzt Wikidata und Wikipedia und übernimmt von dort nur Text, also Titel, Regie, Besetzung und Handlung. Bilder lädt sie nicht. Mehr dazu im <privacy>Datenschutz</privacy>.",
+    "kindFilm": "Film",
+    "kindSeries": "Serie",
+    "loading": "Lade Film …",
+    "loadFailed": "Film konnte nicht geladen werden.",
+    "castCount_one": "{{count}} Darsteller",
+    "castCount_other": "{{count}} Darsteller",
+    "chooseOther": "Anderen Film wählen",
+    "sources_wikipedia": "Titel, Daten, Besetzung, Mitwirkende und Auszeichnungen: <wikidata>Wikidata</wikidata> (CC0). Handlung: <wikipedia>Wikipedia, „{{title}}“</wikipedia>, <license>CC BY-SA 4.0</license>.",
+    "sources_none": "Titel, Daten, Besetzung, Mitwirkende und Auszeichnungen: <wikidata>Wikidata</wikidata> (CC0). Eine Handlung wurde nicht gefunden.",
+    "resetContent": "Auf Filmwerte zurücksetzen",
+    "replaceHint": "Beide Optionen füllen Titel, Regie, Datum, Laufzeit, Infos, Besetzung, Auszeichnungen und Zusammenfassung neu. Was du dort selbst geändert hast, ist danach weg."
+  },
+  "filmCredits": {
+    "director": "Regie",
+    "writer": "Drehbuch",
+    "composer": "Musik",
+    "cinematographer": "Kamera",
+    "editor": "Schnitt",
+    "producer": "Produktion",
+    "studio": "Studio",
+    "genre": "Genre",
+    "country": "Land",
+    "language": "Sprache",
+    "rating": "FSK",
+    "basedOn": "Vorlage",
+    "filmingLocation": "Drehorte"
+  },
+  "filmDefaults": {
+    "title": "Mein Film",
+    "subtitle": "Regie",
+    "quote": "„Hier steht der Satz, den du nie vergisst.“",
+    "summary": "Hier steht, worum es in deinem Film geht.\nEin zweiter Absatz, wenn die Geschichte mehr braucht."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "film",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/film/src",
+  "projectType": "application",
+  "tags": ["type:app", "scope:film"],
+  "targets": {
+    "typecheck": {},
+    "lint": {},
+    "test": {}
+  }
+}

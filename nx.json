@@ -1,0 +1,70 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": ["default", "!{projectRoot}/tests/**/*", "!{projectRoot}/**/*.test.ts"],
+    "sharedGlobals": [
+      "{workspaceRoot}/tsconfig.base.json",
+      "{workspaceRoot}/tools/vite/**/*",
+      "{workspaceRoot}/package.json",
+      {
+        "env": "VITE_SITE_OWNER"
+      },
+      {
+        "env": "VITE_SITE_ADDRESS"
+      },
+      {
+        "env": "VITE_SITE_EMAIL"
+      },
+      {
+        "env": "VITE_POSTER_BRAND"
+      },
+      "{workspaceRoot}/.env"
+    ]
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "vite:typecheck",
+        "testTargetName": "vite:test"
+      }
+    }
+  ],
+  "targetDefaults": {
+    "typecheck": {
+      "command": "tsc -p tsconfig.json",
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "cache": true,
+      "inputs": ["default", "^default"]
+    },
+    "lint": {
+      "command": "eslint .",
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "cache": true,
+      "inputs": ["default", "^default", "{workspaceRoot}/eslint.config.mjs"]
+    },
+    "test": {
+      "command": "bun test",
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "cache": true,
+      "inputs": ["default", "^production"]
+    },
+    "build": {
+      "cache": true,
+      "inputs": ["production", "^production"]
+    }
+  }
+}
